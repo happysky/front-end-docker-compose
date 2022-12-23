@@ -1,0 +1,36 @@
+{
+  "name": "front-end-docker-compose",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "cross-env NODE_ENV=development nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/happysky/front-end-docker-compose.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.12",
+    "cross-env": "7.0.3"
+  },
+  "dependencies": {
+    "axios": "^0.21.4",
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "file-stream-rotator": "0.5.7",
+    "moment": "2.29.1",
+    "morgan": "1.10.0",
+    "pug": "^3.0.2",
+    "serve-index": "1.9.1",
+    "winston": "3.3.3",
+    "winston-daily-rotate-file": "4.5.5"
+  },
+  "bugs": {
+    "url": "https://github.com/happysky/front-end-docker-compose/issues"
+  },
+  "homepage": "https://github.com/happysky/front-end-docker-compose#readme"
+}
