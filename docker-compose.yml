@@ -1,12 +1,19 @@
 version: "3.0"
 services: 
+  nginx:
+    image: nginx
+    restart: always
+    ports:
+      - 9082:80
+    volumes:
+      - ./nginx_config/:/etc/nginx/conf.d/
+      - ./nginx_logs/:/var/log/nginx/
+      - ./dist/:/usr/app/
   web:
     build: .
     volumes:
       - .:/usr/app/
       - node_modules:/usr/app/node_modules
-    ports:
-      - "8082:3000"    
     restart: always
     environment:
       - TZ=Asia/Shanghai
