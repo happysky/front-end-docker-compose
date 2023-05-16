@@ -1,4 +1,4 @@
-FROM node:latest
+FROM node:18.16.0
 
 RUN mkdir -p /usr/share/zoneinfo/Asia/
 RUN cp /usr/share/zoneinfo/Asia/Shanghai /etc/localtime && \
