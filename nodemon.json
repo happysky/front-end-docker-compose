@@ -1,0 +1,12 @@
+{
+  "ignore": [
+    ".gitignore",
+    ".npmrc",
+    "docker-compose.yml",
+    "Dockerfile",
+    ".log/*", 
+    "nginx_logs/*",
+    "package.json",
+    "README.md"
+  ]
+}
