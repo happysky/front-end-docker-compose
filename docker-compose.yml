@@ -17,8 +17,6 @@ services:
       - ./nginx_config/conf.d/:/etc/nginx/conf.d/
       - ./nginx_logs/:/var/log/nginx/
       - ./dist/:/usr/app/
-      - ./logrotate_config/test.sh:/tmp/test.sh
-      - ./logrotate_config/tmp:/tmp/tmp
   web:
     build: .
     volumes:
